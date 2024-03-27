@@ -1,8 +1,8 @@
 import graphene
 
 from core.mutations import Mutation
+from core.queries import Query
 
-class Query(graphene.ObjectType):
-    hello = graphene.String(default_value="Hi!")
+
 
 schema = graphene.Schema(query=Query, mutation=Mutation)
