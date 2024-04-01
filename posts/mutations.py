@@ -57,7 +57,6 @@ class DeletePost(graphene.Mutation):
         existing_post.delete()
         return DeletePost(success=True)
         
-        
-        
+      
     
     
